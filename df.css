@@ -295,3 +295,140 @@ html, body {
 #panel.show {
   max-height: 200px; /* ya jitna content ka height ho */
 }
+#connectmain{
+    max-width: 45%;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: space-between;
+    padding: 45px 1px;
+    background-color: var(--bgcolor);
+    height: auto;
+    position: relative;
+}
+#menuitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#menuuotag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menuuotag ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#menuuotag li {
+    list-style: none;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    text-wrap: nowrap;
+}
+#connectuspara{
+    display: list-item;
+    text-align: beginning;
+    unicode-bidi: isolate;
+    margin-top: 80px;
+    list-style: none;
+    padding-left: 10px;
+}
+#connet_us_para{
+    font-size: 2em;
+    list-style: none;
+    color: var(--text-color);
+    display: list-item;
+    text-align: beginning;
+    unicode-bidi: isolate;
+    margin-top: 50px;
+}
+#connectuspara :last-child{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color);
+    padding-top: 20px;
+}
+#formain{
+   max-width: 55%;
+    height: auto;
+    /* margin: 50px; */
+    /* background-color: violet; */
+    height: auto;
+    padding: 95px;
+    margin-left: 101px;
+    position: absolute;
+    top: -82px;
+    transform: translate(100%, 0);
+    left: 80%;
+    right: 0;
+    bottom: 20px;
+}
+#formandiv h3{
+    font-size: 4.5em;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color);
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    text-wrap: nowrap;
+    text-align: right;
+    margin-bottom: 50px;
+}
+#formdetils input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 8px 4px;
+    margin: 0 0 20px 160px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2;
+    outline: none;
+    transition: all 0.3s ease;
+}
+#divsubmit button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#footermainapp{
+    padding: 20px;
+    background-color: var(--bgcolor);
+    margin-top: 130px;
+}
+#fotmaindiv ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+#fotmaindiv ul li {
+    list-style: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--text-color);
+}
+#fotmaindiv ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
