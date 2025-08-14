@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+:root {
+    --primary-color: #08a7ce;
+    --secondary-color: #f60163;
+    --text-color: #fff;
+    --bgcolor: #000;
+}
+#main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+}
+
+#sidebar {
+    width: 20%;
+    padding: 24px;
+    background: var(--bgcolor);
+    border-right: 2px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    /* position: sticky; */
+}
+
+#sidebarmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#sidebardiv a { display: inline-block; }
+#logo img {
+    max-width: 130px;
+    max-height: 30px;
+}
+#contactus {
+    margin: 42px 0 29px;
+}
+#contactus a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    color: #fff;
+    border: 1.5px solid;
+    border-image-source: conic-gradient(from 90deg at 50% 50%, #07A7CD 0deg, #FC0600 62.37deg, #09D809 173.97deg, #FF6600 255.65deg, #F60163 290.5deg, #07A7CD 360deg);
+    border-image-slice: 1;
+    border-radius: 50px;
+}
+#otherpages ul {
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+}
+#otherpages li {
+    margin-bottom: 12px;
+}
+#otherpages a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Sidebar Image & Text */
+#sideimgdiv img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#sideimgdiv p {
+    margin-block: 1em;
+    margin-inline: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: azure;
+}
+
+/* Main Content */
+#content { flex: 1; background: var(--bgcolor); margin-left: 20%; overflow-y:auto; height: 100vh; }
+
+#secapp {
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+#secapp h1 {
+    margin-left: 70px;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* font-family: 'Quicksand', sans-serif; */
+    color: var(--text-color);
+}
+#potflumain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 15px;
+}
+#leftpotflumain {
+    text-align: center;
+}
+#leftpotflumain img {
+    width: 98%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#textright {
+    margin-bottom: 50px;
+}
+#textright h3 {
+    margin: 1em 0;
+    margin-left: 10px;
+    font-size: 2.9em;
+    font-weight: 500;
+    line-height: 120%;
+    /* font-family: 'Playfair Display'; */
+    color: var(--text-color);
+}
+#textright p {
+    margin-top: -0.5em;
+    font-size: 1.2em;
+    /* font-family: 'Quicksand'; */
+    line-height: 1.1;
+    color: var(--text-color);
+}
+#textright a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+#techbtn a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    line-height: 160%;
+    color: #fff;
+    background: #08a7ce;
+    border-radius: 50px;
+    text-decoration: none;
+}
+#fluttermain{
+    height: auto;
+    width: 100%;
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-wrap: wrap;          /* chhoti screen me upar-niche shift ho jaaye */
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 90px 15px;
+}
+#fludowndiv{
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 0px;
+    white-space: normal;       /* text wrap hona chahiye */
+    word-wrap: break-word;     /* lamba word break ho jaaye */
+    max-width: 100%;    /* div ki width 100% ho */  
+}
+#fludowndiv h3{
+    /* font-family: Playfair Display; */
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 106%;
+    color: #fff;
+}
+#fludowndiv p{
+    /* font-family: Quicksand; */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+#fludownpara{
+    font-size: 16px;
+    width: 100%;
+    max-width: 45%;
+    margin: auto;
+}
+#fludownpara p {
+    font-family: Quicksand;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
+}
+#fludownpara p  a{
+    text-decoration: none;
+    color: #08a7ce;;
+}
+#fludownbtn{
+    position: relative;
+    margin-top: 100px;
+
+}
+#fludownbtn a{
+    background-color: #08a7ce;
+    padding: 12px 50px 12px 30px;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 160%;
+}
+#fludownbtn::before{
+    content: "";
+    position: absolute;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADNSURBVHgB5dfLDcIwEIThCRVQgkuhBDogHdCCS6CjiEpogQ7MIvnAIX7PxAdWWuWQKP8X+ZQFmQkhnO1yt3XQzBMFwCOI54T8vCGepfSAIVdwjsDZ3jBj7COc7WvvCKCeXFwOSMS97SYHpOLxnhaQi8sBpbgUUBOXAWrjEkBLnA5ojVMBPXEaoDdOAYzEhwGj8SEAI94NYMW7AMx4M4AdbwIo4tUAVbwKoIzH9/skQB3/6VxtL1PiKdGfxiNgmxbfAXgcPfEIvn/CKw6eDw/SuwAyJyCBAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    right: 25px;
+    top: 7px;
+    z-index: 99999;
+}
+#dynamicservice{
+    padding: 50px;
+}
+#dynamicservicediv{
+    margin-bottom: 20px;
+}
+#dynamicservicediv h3{
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color);
+    text-align: center;
+}
+#dynamicservicediv p{
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1em;
+}
+#parainno{
+    text-align: center;
+}
+#parainno p{
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color);
+}
+#mainaccordsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+#imgtextacc {
+    width: 100%;       /* Container apni maximum width le */
+    max-width: 300px;  /* Agar chaho to specific max width bhi de sakte ho */
+    overflow: hidden;  /* Extra part cut ho jaaye agar image bada ho */
+}
+#imgtextacc img {
+    width: 100%;       /* Container ke width ke hisaab se adjust ho */
+    height: auto;      /* Aspect ratio maintain rahe */
+    display: block;    
+}
+#panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#panel.show {
+  max-height: 200px; /* ya jitna content ka height ho */
+}
