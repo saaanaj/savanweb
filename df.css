@@ -271,20 +271,55 @@ html, body {
 }
 #mainaccordsec{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 2px 8px;
+    /* width: 100%;
+    height: 100vh; */
 }
 #imgtextacc {
-    width: 100%;       /* Container apni maximum width le */
-    max-width: 300px;  /* Agar chaho to specific max width bhi de sakte ho */
-    overflow: hidden;  /* Extra part cut ho jaaye agar image bada ho */
+    width: 100%;    
+    max-width: 35%;  
+    margin: 2px;
 }
-#imgtextacc img {
-    width: 100%;       /* Container ke width ke hisaab se adjust ho */
-    height: auto;      /* Aspect ratio maintain rahe */
-    display: block;    
+#yourimage {
+    width: 100%;
+    height: 300px; /* ya jitni height chahiye */
+    background-image: url('https://vayuz-tixd.vercel.app/assets/right_image-BlZS0xHp.png');
+    background-size: cover;
+    background-position: center;
+}
+#textacsec {
+    width: 100%;
+    max-width: 65%;
+    margin: 10px;
+}
+#accordion   {
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    /* border-radius: 50px; */
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    text-wrap: nowrap;
+}
+#accordion #flutter {
+    margin-left: 480px;
+}
+#accordion #uiux {
+    margin-left: 575px;
+}
+#accordion #rohitmadrchod {
+    margin-left: 543px;
+}
+#accordion #amitbhosdikegay {
+    margin-left: 569px;
 }
 #panel {
   max-height: 0;
@@ -293,8 +328,10 @@ html, body {
 }
 
 #panel.show {
-  max-height: 200px; /* ya jitna content ka height ho */
+  max-height: 200px; /* content ke height ke hisaab se badha sakte ho */
+  color: #fff;
 }
+
 #connectmain{
     max-width: 45%;
     display: flex;
