@@ -1,17 +1,34 @@
-const acc = document.querySelector('#accordion');
-const panel = document.querySelector('#panel');
-const pm = document.querySelector('#plusminus');
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionBtns = document.querySelectorAll("#accordion");
 
-acc.addEventListener('click', () => {
-    if (panel.style.display === 'block') {
-        panel.style.display = 'none';   // content hide
-        pm.textContent = '+';           // button me + dikhaye
-    } else {
-        panel.style.display = 'block';  // content show
-        pm.textContent = '-';           // button me - dikhaye
-    }
-});
-acc.addEventListener('click', () => {
-  panel.classList.toggle('show');
-  pm.textContent = panel.classList.contains('show') ? '-' : '+';
+    accordionBtns.forEach(btn => {
+        const plusMinus = btn.querySelector("span");
+
+        btn.addEventListener("click", function () {
+            accordionBtns.forEach(otherBtn => {
+                const otherPanel = otherBtn.nextElementSibling;
+                const otherPlusMinus = otherBtn.querySelector("span");
+
+                if (otherBtn !== btn) {
+                    // Dusre panel ko smoothly close karo
+                    otherPanel.style.maxHeight = null;
+                    otherPanel.classList.remove("show");
+                    otherPlusMinus.textContent = "+";
+                }
+            });
+
+            // Click kiya hua panel toggle karo
+            const panel = btn.nextElementSibling;
+
+            if (panel.classList.contains("show")) {
+                panel.style.maxHeight = null; // smoothly close
+                panel.classList.remove("show");
+                plusMinus.textContent = "+";
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px"; // smoothly open
+                panel.classList.add("show");
+                plusMinus.textContent = "-";
+            }
+        });
+    });
 });
